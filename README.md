@@ -1,4 +1,4 @@
-# Advanced Calculator
+# Calculator
 
 Welcome to the Advanced Calculator project! This web-based calculator is designed to handle complex arithmetic operations using the order of operations (PEMDAS) and supports multi-step calculations in a single input. It leverages JavaScript objects to manage various functions and features.
 
