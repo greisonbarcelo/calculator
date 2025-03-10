@@ -7,7 +7,9 @@ display.textContent = displayValue;
 let buttonTest = document.querySelectorAll("button");
 // console.log(buttonTest);
 
-let firstNumber;
+let firstNumber = null;
+let secondNumber = null;
+let operator = null;
 
 function getFirstNumber(button) {
     for(let i = 0; i <= 9; i++) {
@@ -18,21 +20,28 @@ function getFirstNumber(button) {
 }
 buttonTest.forEach(button => {
     button.addEventListener('click', () => {
-        if (display.textContent === '0') {
-            display.textContent = getFirstNumber(button); // Replace '0' with the new number
-        } else {
-            display.textContent += getFirstNumber(button); // Append new number
+        const buttonContent = button.textContent;
+
+        if (!isNaN(buttonContent)) { // If the button is a number
+            if (display.textContent === '0') {
+                display.textContent = getFirstNumber(button); // Replace '0' with the new number
+            } else {
+                display.textContent += getFirstNumber(button); // Append new number
+            }
+
+            displayValue = display.textContent;
+            console.log(`dv = ${displayValue}`);
+        } else if (["+", "-", "*", "/"].includes(buttonContent)) { // If the button is an operator
+            firstNumber = parseFloat(display.textContent); // Save the current number as firstNumber
+            operator = buttonContent; // Save the operator
+            displayValue = 0; // Reset display for new input
+            console.log(`First Number: ${firstNumber}, Operator: ${operator}`);
         }
-
-        displayValue = display.textContent;
-        firstNumber = displayValue;
-        console.log(`dv = ${displayValue}`);
-        console.log(`first NUMBER ${displayValue}`)
-
     });
 });
 
 
+// console.log(`first NUMBER ${firstNumber}`)
 
 
 
