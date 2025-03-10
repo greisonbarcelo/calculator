@@ -3,3 +3,19 @@
     padding: 0;
     margin: 0;
 }
+
+#container {
+    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    width: 50%;
+    margin-top: 40px;
+}
+
+#display {
+    background-color: gray;
+}
