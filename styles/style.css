@@ -5,6 +5,8 @@
 }
 body {
     background-color: black;
+    font-family: 'Roboto', Arial, sans-serif; /* Roboto with fallback fonts */
+
 }
 #hero {
     color: white;
