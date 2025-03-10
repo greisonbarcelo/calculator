@@ -5,17 +5,46 @@
 }
 
 #container {
-    border: 1px solid red;
-    width: 500px;
-    height: 500px;
+    /* border: 1px solid red; */
+    width: 360px; /* Static width for the calculator */
+    margin: auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-
-    margin: auto;
-    width: 50%;
-    margin-top: 40px;
+    gap: 5px; /* Space between rows */
+    padding: 8px;
+    background-color: black;
+}
+#display {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+    color: white;
+}
+.row {
+    display: flex; /* Each row uses Flexbox */
+    gap: 5px; /* Space between buttons */
 }
 
-#display {
+button {
+    flex: 1; /* Ensure all buttons take equal space */
+    height: 70px; /* Consistent height for all buttons */
+    text-align: center;
+    border-radius: 50%;
+    background-color: #424242;
+    color: white;
+}
+
+button.zero {
+    flex: none; /* Disable Flexbox resizing for "0" */
+    width: calc(2 * 86px + 5px); /* Slightly wider than two buttons (adjusted to 85px each) */
+    height: 70px; /* Same height as other buttons */
+    border-radius: 60px;
+}
+.dark-gray {
     background-color: gray;
+}
+.orangey {
+    background-color: rgb(247, 167, 20);
 }
