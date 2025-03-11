@@ -34,7 +34,7 @@ buttonTest.forEach(button => {
         } else if (["+", "-", "*", "/"].includes(buttonContent)) { // If the button is an operator
             firstNumber = parseFloat(display.textContent); // Save the current number as firstNumber
             operator = buttonContent; // Save the operator
-            displayValue = 0; // Reset display for new input
+            display.textContent = "0"; // Reset display for new input
             console.log(`First Number: ${firstNumber}, Operator: ${operator}`);
         }
     });
