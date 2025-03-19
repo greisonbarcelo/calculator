@@ -8,12 +8,12 @@ body {
     font-family: 'Roboto', Arial, sans-serif; /* Roboto with fallback fonts */
 
 }
-#hero {
+.hero {
     color: white;
     text-align: center;
     padding-top: 25px;
 }
-#container {
+.container {
     border: 2px solid white;
     border-radius: 25px;
     width: 360px; /* Static width for the calculator */
@@ -25,7 +25,7 @@ body {
     padding: 8px;
     background-color: black;
 }
-#display {
+.display {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
@@ -37,7 +37,6 @@ body {
     display: flex; /* Each row uses Flexbox */
     gap: 5px; /* Space between buttons */
 }
-
 button {
     flex: 1; /* Ensure all buttons take equal space */
     height: 70px; /* Consistent height for all buttons */
@@ -46,16 +45,19 @@ button {
     background-color: #424242;
     color: white;
 }
-
-button.zero {
+.zero {
     flex: none; /* Disable Flexbox resizing for "0" */
     width: calc(2 * 86px + 5px); /* Slightly wider than two buttons (adjusted to 85px each) */
     height: 70px; /* Same height as other buttons */
     border-radius: 60px;
 }
-.dark-gray {
+.gray-btn {
     background-color: gray;
 }
-.orangey {
+.orange-btn {
     background-color: rgb(247, 167, 20);
 }
+
+
+
+
