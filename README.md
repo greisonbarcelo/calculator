@@ -1,29 +1,56 @@
-# Calculator
+# Calculator Project
 
-Welcome to the Advanced Calculator project! This web-based calculator is designed to handle complex arithmetic operations using the order of operations (PEMDAS) and supports multi-step calculations in a single input. It leverages JavaScript objects to manage various functions and features.
+## Overview
+This is a simple calculator project developed as part of The Odin Project's Foundations course. The calculator performs basic arithmetic operations and is built using HTML, CSS, and JavaScript.
 
 ## Features
+- Addition, subtraction, multiplication, and division operations
+- Clear button to reset the calculator
+- Responsive design for various screen sizes
 
-- **Basic Operations:** Perform addition, subtraction, multiplication, and division.
-- **Order of Operations:** Handles calculations using the correct order of operations (PEMDAS).
-- **Multi-Step Calculations:** Supports multiple calculations in a single input.
-- **Clear Button:** Resets the calculator to its initial state.
-- **Responsive Design:** Works on both desktop and mobile devices.
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
 
-## How to Use
+## Installation
+To run this project locally, follow these steps:
 
-1. **Set Up:** Open the `index.html` file in your web browser.
-2. **Input Calculation:** Enter your calculation in the input field, including complex expressions.
-3. **Calculate:** Click the equal button to see the result.
-4. **Clear:** Click the clear button to reset the calculator.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/calculator-project.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd calculator-project
+    ```
+3. Open `index.html` in your browser to view the calculator.
 
-## Project Structure
+## Usage
+1. Enter numbers using the buttons on the calculator.
+2. Select the desired arithmetic operation.
+3. Press the `=` button to see the result.
+4. Use the `C` button to clear the input.
 
-```plaintext
-advanced-calculator/
-├── css/
-│   ├── styles.css
-├── js/
-│   ├── calculator.js
-│   ├── script.js
-├── index.html
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+For any questions or feedback, please reach out to me at your-email@example.com.
+
+## Tags
+- #TheOdinProject
+- #Calculator
+- #JavaScript
+- #HTML
+- #CSS
