@@ -46,7 +46,7 @@ Contributions are welcome! Please follow these steps to contribute:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-For any questions or feedback, please reach out to me at your-email@example.com.
+For any questions or feedback, please reach out to me.
 
 ## Tags
 - #TheOdinProject
