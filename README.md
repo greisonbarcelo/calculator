@@ -6,7 +6,6 @@ This is a simple calculator project developed as part of The Odin Project's Foun
 ## Features
 - Addition, subtraction, multiplication, and division operations
 - Clear button to reset the calculator
-- Responsive design for various screen sizes
 
 ## Technologies Used
 - HTML
